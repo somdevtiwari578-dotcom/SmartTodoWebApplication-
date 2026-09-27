@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartTodo - Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="auth-page">
+    <section class="card auth-card">
+      <h1>Create Account</h1>
+      <p class="muted">Register for SmartTodo</p>
+
+      <form id="registerForm">
+        <label for="registerName">Name</label>
+        <input id="registerName" type="text" required minlength="2" placeholder="Rahul">
+
+        <label for="registerEmail">Email</label>
+        <input id="registerEmail" type="email" required placeholder="rahul@gmail.com">
+
+        <label for="registerPassword">Password</label>
+        <input id="registerPassword" type="password" required minlength="6" placeholder="Minimum 6 characters">
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p id="registerMessage" class="message"></p>
+      <p class="switch">Already have an account?
+        <a href="index.html">Login</a>
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
